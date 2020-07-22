@@ -27,9 +27,18 @@
 
 /* end of demo specific */
 
-@media (prefers-color-scheme: dark) {
-  /* add your dark theme changes here */
-}
+/* BELOW MEDIA QUERY WILL NEED TO BE REACTIVATED FOR ADP INTEGRATION */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #F46C95;
+    --foreground-light: #FF709B;
+    --foreground-dark: #B5506E;
+    --background: #1B1C30;
+    --background-light: #46497D;
+    --background-dark: #131321;
+  }
+} */
 
 ::selection {
   background-color: var(--foreground);
