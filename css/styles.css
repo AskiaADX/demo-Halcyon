@@ -154,7 +154,7 @@ body {
 
 .secondary:hover {
   background-color: var(--neutral-dark);
-  color: var(--background-light);
+  color: var(--background);
 }
 
 .disabled {

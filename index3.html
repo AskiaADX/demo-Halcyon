@@ -13,6 +13,7 @@
 <body>
   <section class="progress"></section>
   <section class="question">
+    <!-- Delete below snippet for ADP integration -->
     <div class="theme-switch-wrapper">
       <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
@@ -20,39 +21,32 @@
       </label>
       <em>Change mode!</em>
     </div>
+    <!-- End demo snippet -->
     <div class="caption">
-      <p>What words are written on the knuckles of “Reverend” Harry Powell (Robert Mitchum) in <i>The Night of the Hunter</i>?</p>
+      <p>In what 1976 thriller does Robert De Niro famously say <i>“You talkin’ to me?”</i></p>
     </div>
     <div class="instruction">
-      <p>Please select all applicable answers.</p>
+      <p>Only one answer allowed.</p>
     </div>
     <div class="responses">
       <div class="input-container">
-        <input class="segment-btn" id="check-1" type="checkbox">
-        <label class="segment-label check-label" for="check-1">
-          <span>Love</span>
+        <input class="segment-btn" name="radio-collection" id="radio-1" type="radio">
+        <label class="segment-label" for="radio-1">
+          <span>Uber driver</span>
         </label>
-        <input class="segment-btn" id="check-2" type="checkbox">
-        <label class="segment-label check-label" for="check-2">
-          <span>Mama</span>
+        <input class="segment-btn" name="radio-collection" id="radio-2" type="radio">
+        <label class="segment-label" for="radio-2">
+          <span>MS Access driver</span>
         </label>
-        <input class="segment-btn" id="check-3" type="checkbox">
-        <label class="segment-label check-label" for="check-3">
-          <span>Foot</span>
-        </label>
-        <input class="segment-btn" id="check-4" type="checkbox">
-        <label class="segment-label check-label" for="check-4">
-          <span>Hate</span>
-        </label>
-        <input class="segment-btn" id="check-5" type="checkbox">
-        <label class="segment-label check-label" for="check-5">
-          <span>Steam</span>
+        <input class="segment-btn" name="radio-collection" id="radio-3" type="radio">
+        <label class="segment-label" for="radio-3">
+          <span>Taxi driver</span>
         </label>
       </div>
     </div>
   </section>
   <section class="navigation">
-    <a href="#" class="btn secondary disabled">Back</a>
+    <a href="index.html" class="btn secondary">Back</a>
     <a href="index2.html" class="btn primary">Next</a>
   </section>
   <script>
