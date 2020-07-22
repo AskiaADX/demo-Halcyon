@@ -13,6 +13,13 @@
 <body>
   <section class="progress"></section>
   <section class="question">
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+      <em>Change mode!</em>
+    </div>
     <div class="caption">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam esse expedita cupiditate vel sint voluptatum quis corrupti obcaecati nostrum.</p>
     </div>
@@ -46,7 +53,32 @@
   </section>
   <section class="navigation">
     <a href="#" class="btn secondary disabled">Back</a>
-    <a href="#" class="btn primary">Next</a>
+    <a href="index2.html" class="btn primary">Next</a>
   </section>
+  <script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }    
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  </script>
 </body>
 </html>
