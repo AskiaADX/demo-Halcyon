@@ -106,7 +106,7 @@ body {
 
 .progress {
   background-color: var(--foreground);
-  width: 15vw;
+  width: 15vw; /* For demo purposes only. Needs to be removed */
   transition: width ease-in .44s;
 }
 
