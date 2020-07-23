@@ -305,7 +305,7 @@ a {
 }
 
 .slider {
-  background-color: #CCC;
+  background-color: var(--neutral);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -316,7 +316,7 @@ a {
 }
 
 .slider::before {
-  background-color: #FFF;
+  background-color: var(--background-light);
   bottom: 4px;
   content: "";
   height: 26px;
