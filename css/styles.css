@@ -393,7 +393,6 @@ input:checked + .slider::before {
   z-index: 1000;
   padding: 8px;
   width: 160px;
-  background-color: #000;
   background-color: hsla(0, 0%, 20%, .9);
   color: #FFF;
   content: attr(data-tooltip);
@@ -420,7 +419,6 @@ input:checked + .slider::before {
 .tooltip-top::before {
   margin-left: -6px;
   margin-bottom: -12px;
-  border-top-color: #000;
   border-top-color: hsla(0, 0%, 20%, .9);
 }
 
@@ -459,7 +457,6 @@ input:checked + .slider::before {
   margin-right: -12px;
   margin-bottom: 0;
   border-top-color: transparent;
-  border-left-color: #000;
   border-left-color: hsla(0, 0%, 20%, .9);
 }
 
@@ -482,7 +479,6 @@ input:checked + .slider::before {
   margin-top: -12px;
   margin-bottom: 0;
   border-top-color: transparent;
-  border-bottom-color: #000;
   border-bottom-color: hsla(0, 0%, 20%, .9);
 }
 
@@ -504,7 +500,6 @@ input:checked + .slider::before {
   margin-bottom: 0;
   margin-left: -12px;
   border-top-color: transparent;
-  border-right-color: #000;
   border-right-color: hsla(0, 0%, 20%, .9);
 }
 
