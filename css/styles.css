@@ -444,29 +444,6 @@ input:checked + .slider::before {
   transform: translateY(-12px);
 }
 
-/* Left */
-.tooltip-left::before,
-.tooltip-left::after {
-  right: 100%;
-  bottom: 50%;
-  left: auto;
-}
-
-.tooltip-left::before {
-  margin-left: 0;
-  margin-right: -12px;
-  margin-bottom: 0;
-  border-top-color: transparent;
-  border-left-color: hsla(0, 0%, 20%, .9);
-}
-
-.tooltip-left:hover::before,
-.tooltip-left:hover::after,
-.tooltip-left:focus::before,
-.tooltip-left:focus::after {
-  transform: translateX(-12px);
-}
-
 /* Bottom */
 .tooltip-bottom::before,
 .tooltip-bottom::after {
@@ -487,38 +464,4 @@ input:checked + .slider::before {
 .tooltip-bottom:focus::before,
 .tooltip-bottom:focus::after {
   transform: translateY(12px);
-}
-
-/* Right */
-.tooltip-right::before,
-.tooltip-right::after {
-  bottom: 50%;
-  left: 100%;
-}
-
-.tooltip-right::before {
-  margin-bottom: 0;
-  margin-left: -12px;
-  border-top-color: transparent;
-  border-right-color: hsla(0, 0%, 20%, .9);
-}
-
-.tooltip-right:hover::before,
-.tooltip-right:hover::after,
-.tooltip-right:focus::before,
-.tooltip-right:focus::after {
-  transform: translateX(12px);
-}
-
-/* Move directional arrows down a bit for left/right tooltips */
-.tooltip-left::before,
-.tooltip-right::before {
-  top: 3px;
-}
-
-/* Vertically center tooltip content for left/right tooltips */
-.tooltip-left::after,
-.tooltip-right::after {
-  margin-left: 0;
-  margin-bottom: -16px;
 }
