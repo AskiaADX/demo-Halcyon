@@ -316,7 +316,7 @@ a {
 }
 
 .slider::before {
-  background-color: var(--background-light);
+  background-color: var(--background);
   bottom: 4px;
   content: "";
   height: 26px;
